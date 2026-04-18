@@ -1,33 +1,29 @@
-/* ================ style.css - Zikra Seid Portfolio ================ */
 
-/* 1. Universal Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 3. Body Styling */
+
 body {
-    background-color: #0f172a;           /* Deep navy background */
+    background-color: #0f172a;          
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.1rem;                   /* Base font size in rem */
+    font-size: 1.1rem;                  
     line-height: 1.7;
     color: #e2e8f0;
     padding: 2rem 5%;
 }
 
-/* 4. Header - Name */
 h1 {
     color: #60a5fa;
     text-align: center;
-    font-size: 3.5rem;                   /* Using rem */
+    font-size: 3.5rem;                 
     margin: 2rem 0 1rem 0;
     text-shadow: 0 4px 15px rgba(96, 165, 250, 0.3);
     letter-spacing: -2px;
 }
 
-/* 7. Flexbox - Bio + Profile Image Section */
 .hero {
     display: flex;
     gap: 4rem;
@@ -38,7 +34,6 @@ h1 {
     padding: 2rem;
 }
 
-/* 5. Bio Paragraph */
 .hero p {
     font-size: 1.15rem;
     line-height: 1.8;
@@ -47,9 +42,8 @@ h1 {
     color: #cbd5e1;
 }
 
-/* 6. Profile Image */
 .hero img {
-    width: 280px;                        /* px unit */
+    width: 280px;                       
     height: 280px;
     border: 6px solid #60a5fa;
     border-radius: 50%;
@@ -58,7 +52,6 @@ h1 {
     transition: transform 0.4s ease;
 }
 
-/* Navigation Bar */
 nav {
     background: rgba(15, 23, 42, 0.95);
     backdrop-filter: blur(10px);
@@ -93,7 +86,6 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
-/* 9. Lists Styling */
 ul, ol {
     list-style: none;
     padding-left: 0;
@@ -114,7 +106,6 @@ ul li:before {
     left: 0;
 }
 
-/* 10. Table Styling */
 table {
     width: 100%;
     max-width: 900px;
@@ -142,7 +133,6 @@ tr:hover {
     background-color: #334155;
 }
 
-/* 12. Form Styling */
 form {
     max-width: 600px;
     margin: 3rem auto;
@@ -175,7 +165,6 @@ input:focus, textarea:focus {
     outline: none;
 }
 
-/* 13. Submit Button */
 button {
     background-color: #60a5fa;
     color: #0f172a;
@@ -194,7 +183,6 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* 8. Grid Layout - Skills & Interests */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -202,13 +190,10 @@ button:hover {
     margin: 3rem 0;
 }
 
-/* Hover Effects */
 a:hover, button:hover {
     transition: all 0.3s ease;
 }
 
-/* 16. Media Queries - Responsive Design */
-/* Tablet View */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
@@ -230,7 +215,6 @@ a:hover, button:hover {
     }
 }
 
-/* Mobile View */
 @media (max-width: 480px) {
     body {
         padding: 1rem 5%;
